@@ -108,6 +108,7 @@ function App() {
 
   return (
     <>
+      <h1 className="mb-6 font-bold">MeowDB</h1>
       {!isFormActive.state && (
         <div className="mb-8">
           <button
@@ -262,13 +263,19 @@ function App() {
             />
           </div>
 
-          <button className="bg-green-600 text-xl font-bold p-2" type="submit">
+          <button
+            className="bg-green-600 text-xl font-bold p-2 cursor-pointer hover:bg-green-800 transition-colors duration-200"
+            type="submit"
+          >
             Submit
           </button>
           <button
-            className="bg-blue-600 text-xl  font-bold p-2"
+            className="bg-blue-600 text-xl  font-bold p-2 cursor-pointer hover:bg-blue-800 transition-colors duration-200"
             onClick={() => {
-              setIsFormActive({ state: false, event: "none" });
+              {
+                setIsFormActive({ state: false, event: "none" });
+                setFormData(defaultFormData);
+              }
             }}
           >
             Decline
