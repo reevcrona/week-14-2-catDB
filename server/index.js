@@ -68,6 +68,7 @@ app.get("/cats", async (req, res) => {
 
 app.post("/add-cat", async (req, res) => {
   try {
+    console.log(req.body);
     const newCat = new Cat(req.body);
     await newCat.save();
     res
