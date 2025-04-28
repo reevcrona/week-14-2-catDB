@@ -135,7 +135,7 @@ function App() {
                   ></img>
                 </div>
                 <div className="w-full">
-                  <h2 className="text-black text-3xl font-medium text-center mt-4 mb-5">
+                  <h2 className="text-black text-3xl font-medium text-center mt-4 mb-3">
                     {cat.name}
                   </h2>
                   <div className="text-black grid grid-cols-2 gap-2 mb-4 text-lg">
@@ -185,7 +185,7 @@ function App() {
         >
           <div className="flex flex-col ">
             <label className="text-start" htmlFor="cat-name">
-              Name
+              Name *
             </label>
             <input
               className="border-2 border-black pl-1.5 placeholder:text-[#64748b] p-2"
@@ -200,7 +200,7 @@ function App() {
           </div>
           <div className="flex flex-col">
             <label className="text-start" htmlFor="cat-age">
-              Age
+              Age *
             </label>
             <input
               className="border-2 border-black pl-1.5 placeholder:text-[#64748b] p-2"
@@ -215,7 +215,7 @@ function App() {
           </div>
           <div className="flex flex-col">
             <label className="text-start" htmlFor="gender-select">
-              Gender
+              Gender *
             </label>
             <select
               className="border-2 border-black pl-1.5 placeholder:text-[#64748b] p-2"
@@ -235,7 +235,7 @@ function App() {
           </div>
           <div className="flex flex-col">
             <label className="text-start" htmlFor="cat-breed">
-              Breed
+              Breed *
             </label>
             <input
               className="border-2 border-black pl-1.5 placeholder:text-[#64748b] p-2"
@@ -250,7 +250,7 @@ function App() {
           </div>
           <div className="flex flex-col">
             <label className="text-start" htmlFor="image-url">
-              Url
+              Image Url
             </label>
             <input
               className="border-2 border-black pl-1.5 placeholder:text-[#64748b] p-2"
